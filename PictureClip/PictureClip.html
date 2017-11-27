@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/PictureClip.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript" src="js/PictureClip.js" ></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="PicClipBox">
+			<div id="pictureClipBox">
+				<img src="" id="pictureClip-img1">
+				<img src="" id="pictureClip-img2"/>
+				<div id="pictureClip-MoveClipBox">
+					<div class="ClipTip left-top-Clip"></div>
+					<div class="ClipTip middle-top-Clip"></div>
+					<div class="ClipTip right-top-Clip"></div>
+					<div class="ClipTip left-middle-Clip"></div>
+					<div class="ClipTip right-middle-Clip"></div>
+					<div class="ClipTip left-bottom-Clip"></div>
+					<div class="ClipTip middle-bottom-Clip"></div>
+					<div class="ClipTip right-bottom-Clip"></div>
+					
+					<div class="lineBar line-topToBottom"></div>
+					<div class="lineBar line-leftToRight"></div>
+				</div>
+			</div>
+			<div id="PreViewBox">
+				<img src="" id="pictureClip-img3"/>
+			</div>
+		</div>
+		<div class="PicClipBtn">
+			<div class="PicClipBtn-container">
+				<p>选择图片(jpg/jpeg文件)</p>
+				<input type="file" accept="image/jpeg" id="PictureUpload"/>
+			</div>
+		</div>
+	</body>
+	<script>
+		PictureClip.init({
+			Dottedline:true
+		});
+	</script>
+</html>

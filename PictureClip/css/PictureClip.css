@@ -1,0 +1,178 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.PicClipBox
+{
+	background-color: #f5f6f7;
+	display: inline-block;
+	border: 1px solid #ddd;
+}
+.PicClipBtn
+{
+	margin-top: 5px;
+}
+.PicClipBtn-container
+{
+	position: relative;
+	background-color: #09f;
+	display: inline-block;
+}
+.PicClipBtn-container>p
+{
+	display: block;
+	font-size: 14px;
+	padding:10px;
+	color: #fff;
+}
+.PicClipBtn-container>input[type="file"]
+{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#pictureClipBox
+{
+	float: left;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	overflow: hidden;
+}
+#pictureClip-img1
+{
+	z-index: 1;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+#pictureClip-img2
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	clip: rect(21px,101px,101px,21px);
+}
+#pictureClip-MoveClipBox
+{
+	z-index: 1;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #fff;
+	cursor: move;
+}
+.ClipTip
+{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+}
+.right-top-Clip,
+.left-top-Clip,
+.middle-top-Clip
+{
+	top: -4px;
+	
+}
+.left-top-Clip
+{
+	left: -4px;
+	cursor: nw-resize;
+}
+.middle-top-Clip
+{
+	left: 50%;
+	margin-left: -4px;
+	cursor: n-resize;
+}
+.right-top-Clip
+{
+	right: -4px;
+	cursor: ne-resize;
+}
+.left-middle-Clip,
+.right-middle-Clip
+{
+	top: 50%;
+	margin-top: -4px;
+	cursor: e-resize;
+}
+.left-middle-Clip
+{
+	left: -4px;
+}
+.right-middle-Clip
+{
+	right: -4px;
+}
+.left-bottom-Clip,
+.middle-bottom-Clip,
+.right-bottom-Clip
+{
+	bottom: -4px;
+}
+.left-bottom-Clip
+{
+	left: -4px;
+	cursor: sw-resize;
+}
+.right-bottom-Clip
+{
+	right: -4px;
+	cursor: se-resize;
+}
+.middle-bottom-Clip
+{
+	left: 50%;
+	margin-left: -4px;
+	cursor: s-resize;
+}
+.lineBar
+{
+	display: none;
+	position: absolute;
+}
+.line-topToBottom
+{
+	height: 100%;
+	left: 50%;
+	margin-left: -1px;
+	border: 1px dashed #fff;
+}
+.line-leftToRight
+{
+	width: 100%;
+	top: 50%;
+	margin-top: -1px;
+	border: 1px dashed #fff;
+}
+#PreViewBox
+{
+	float: left;
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+#pictureClip-img3
+{
+	position: absolute;
+	height: 100%;
+	clip: rect(21px,101px,101px,21px);
+}
+
+.active
+{
+	display: block !important;
+}
